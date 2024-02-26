@@ -67,7 +67,7 @@ class QuotePage {
 
   enterLoanDetails(estimatedPrice, downPayment) {
     this.estimatedPurchasePriceInput.clear().type(estimatedPrice);
-    this.nextBtn.click();
+    this.nextBtn.click({ force: true });
     this.estimatedDownPaymentInput.last().type(downPayment);
     this.nextBtn.click({ force: true });
   }
